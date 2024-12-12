@@ -1,27 +1,11 @@
-# AngularBuzzfeedQuizz
+# ⚡ AngularBuzzfeedQuizz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+Este projeto foi desenvolvido seguindo as aulas do Felipe, professor na [📚 DIO.me](https://dio.me), no curso **Criando um Clone do BuzzFeed com Angular**. Durante o desenvolvimento, fiz algumas personalizações para explorar novas técnicas e ferramentas. 🛠️
 
-## Development server
+## 🔧 Modificações Realizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **🎨 Estilização com Tailwind CSS**: Em vez de usar classes CSS tradicionais, optei por utilizar o Tailwind CSS para deixar a aplicação mais bonita 🌟 e também para treinar o uso dessa ferramenta junto com o Angular 17.
+- **📦 Versão do Angular**: O projeto foi desenvolvido com o Angular 17, aproveitando as novas funcionalidades dessa versão. 🚀
 
-## Code scaffolding
+💡 Gostei muito de criar esse pequeno projeto, pois, além de parecer simples, mostrou algumas coisas interessantes como o uso de diretivas do Angular e maneiras de estilizar uma página. Apesar de não ter ficado idêntico ao original, ficou bem clean 🧼 e foi muito legal de fazer e usar. 😄
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

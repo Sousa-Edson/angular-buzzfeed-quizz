@@ -1,0 +1,55 @@
+{
+  "title": "Você seria um herói ou vilão da Marvel?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Com qual superpoder da Marvel você mais se identifica?",
+      "options": [
+        { "id": 1, "name": "Rajadas de energia como o Homem de Ferro", "alias": "A" },
+        { "id": 2, "name": "Força sobre-humana como o Hulk", "alias": "A" },
+        { "id": 3, "name": "Teias de aranha como o Homem-Aranha", "alias": "B" },
+        { "id": 4, "name": "Controle de magia como a Feiticeira Escarlate", "alias": "B" },
+        { "id": 5, "name": "Manipular o clima como a Tempestade", "alias": "B" }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Se estivesse em uma batalha, com quem você preferiria lutar ao seu lado?",
+      "options": [
+        { "id": 1, "name": "Thanos", "alias": "A" },
+        { "id": 2, "name": "Loki", "alias": "A" },
+        { "id": 3, "name": "Os Vingadores", "alias": "B" }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Qual seria sua motivação principal como super ser?",
+      "options": [
+        { "id": 1, "name": "Dominar o mundo como o Doutor Destino", "alias": "A" },
+        { "id": 2, "name": "Defender a Terra como o Capitão América", "alias": "B" },
+        { "id": 3, "name": "Controlar o universo como Thanos", "alias": "A" },
+        { "id": 4, "name": "Proteger os inocentes como o Pantera Negra", "alias": "B" }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Se você tivesse que escolher um artefato da Marvel, qual seria?",
+      "options": [
+        { "id": 1, "name": "A Manopla do Infinito", "alias": "A" },
+        { "id": 2, "name": "O Mjolnir (Martelo do Thor)", "alias": "B" }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Qual seria seu apelido inspirado na Marvel?",
+      "options": [
+        { "id": 1, "name": "O Conquistador (inspirado em Kang)", "alias": "A" },
+        { "id": 2, "name": "O Defensor (inspirado em Demolidor)", "alias": "B" }
+      ]
+    }
+  ],
+  "results": {
+    "A": " vilão da Marvel!",
+    "B": " herói da Marvel!"
+  }
+}

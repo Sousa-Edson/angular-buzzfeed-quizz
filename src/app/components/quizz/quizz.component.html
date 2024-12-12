@@ -1,0 +1,24 @@
+<div class="flex flex-col items-center justify-center p-4 rounded-lg shadow-md bg-slate-500">
+
+    <div class="flex flex-col items-center justify-between space-x-4 mb-4">
+        <img src="../../../assets/imgs/logo.png" alt="" class="w-full h-36 rounded  " />
+        <h3 class="text-2xl font-semibold">{{ title }}</h3>
+    </div>
+
+    <div *ngIf="!finished" class="flex flex-col space-y-4">
+        <div class="w-full p-32 bg-sky-600 rounded">
+            <h3 class="text-xl font-medium ">{{ questionSelected.question }}</h3>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+            <button *ngFor="let option of questionSelected.options; let i = index" (click)="playerChoose(option.alias)"
+                class="btn-option rounded-md py-2 px-4 text-center text-base font-medium hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                {{ option.name }}
+            </button>
+        </div>
+    </div>
+
+    <div *ngIf="finished" class="text-center">
+        <h1 class="text-2xl font-semibold">O Seu resultado é:</h1>
+        <p class="text-xl font-medium">{{ answerSelected }}</p>
+    </div>
+</div>

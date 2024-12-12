@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class QuizzComponent implements OnInit {
 
+
   title: string = ""
 
   questions: any
@@ -77,6 +78,14 @@ export class QuizzComponent implements OnInit {
     })
 
     return result
+  }
+
+  onRefazer() {
+    this.finished = false; // Marca que o quiz ainda não terminou.
+    this.answers = []; // Limpa as respostas dadas pelo jogador.
+    this.answerSelected = ''; // Remove a resposta final.
+    this.questionIndex = 0; // Reinicia o índice da questão.
+    this.questionSelected = this.questions[this.questionIndex];
   }
 
 }

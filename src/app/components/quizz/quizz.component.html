@@ -1,24 +1,42 @@
-<div class="flex flex-col items-center justify-center p-4 rounded-lg shadow-md bg-slate-500">
+<div class="mx-auto mt-5 w-4/5">
+  <div class="quizz_logo flex flex-col justify-center items-center mb-3">
+    <img src="assets/imgs/logo.png" alt="" srcset="" />
+    <h3 class="mt-5 text-lg font-bold">{{ title }}</h3>
+  </div>
 
-    <div class="flex flex-col items-center justify-between space-x-4 mb-4">
-        <img src="../../../assets/imgs/logo.png" alt="" class="w-full h-36 rounded  " />
-        <h3 class="text-2xl font-semibold">{{ title }}</h3>
-    </div>
+  <div
+    *ngIf="!finished"
+    class="flex justify-center items-center border border-indigo-600 rounded-lg bg-indigo-500 w-full h-48 text-xl font-semibold mb-5"
+  >
+    <h3 class="font-bold text-4xl">{{ questionSelected.question }}</h3>
+  </div>
 
-    <div *ngIf="!finished" class="flex flex-col space-y-4">
-        <div class="w-full p-32 bg-sky-600 rounded">
-            <h3 class="text-xl font-medium ">{{ questionSelected.question }}</h3>
-        </div>
-        <div class="grid grid-cols-1 gap-4">
-            <button *ngFor="let option of questionSelected.options; let i = index" (click)="playerChoose(option.alias)"
-                class="btn-option rounded-md py-2 px-4 text-center text-base font-medium hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                {{ option.name }}
-            </button>
-        </div>
-    </div>
+  <div *ngIf="!finished" class="flex flex-wrap justify-center mb-5">
+    <button
+      *ngFor="let option of questionSelected.options; let i = index"
+      (click)="playerChoose(option.alias)"
+      class="btn-option bg-transparent rounded-lg border border-green-500 w-1/2 text-center cursor-pointer text-white font-medium text-lg py-4 px-8 shadow-md hover:bg-green-500 active:translate-y-1"
+    >
+      {{ option.name }}
+    </button>
+  </div>
 
-    <div *ngIf="finished" class="text-center">
-        <h1 class="text-2xl font-semibold">O Seu resultado é:</h1>
-        <p class="text-xl font-medium">{{ answerSelected }}</p>
+  <div
+    *ngIf="finished"
+    class="w-full h-80 bg-purple-900 rounded-lg p-8 flex flex-col justify-center items-center"
+  >
+    <h1 class="text-2xl font-bold text-white mb-5">O Seu resultado é:</h1>
+    <p class="text-4xl text-white transition-all ease-in-out animate-bounce">
+      Você muito provavelmente seria um super
+      <span class="bg-yellow-500 rounded p-2"> {{ answerSelected }}</span>
+    </p>
+    <div>
+      <button
+        class="px-6 py-3 bg-blue-600 mt-4 text-lg rounded hover:bg-blue-800"
+        (click)="onRefazer()"
+      >
+        Refazer
+      </button>
     </div>
+  </div>
 </div>
